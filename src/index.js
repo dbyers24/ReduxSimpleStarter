@@ -13,4 +13,4 @@ const App = () => {
     /div>
 }
 
-ReactDOM.render( < App / > , document.querySelector( '.container' ) );
+ReactDOM.render( < App / > , document.querySelector( '.root' ) );
