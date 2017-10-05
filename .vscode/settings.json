@@ -1,0 +1,6 @@
+{
+    "tslint.exclude": "*.js",
+    "window.zoomLevel": 1,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false
+}
