@@ -1,8 +1,16 @@
-import { React } from 'react';
+import React from 'react';
 import VideoItem from '../video-item';
-class VideoList extends React.Component{
-  return (
-    <ul>
-    </ul>
+
+const VideoList = () => {
+  return(
+    <div>
+      <ul>
+        <li>
+        beans
+        </li>
+      </ul>
+    </div>
   )
 }
+
+export default VideoList;

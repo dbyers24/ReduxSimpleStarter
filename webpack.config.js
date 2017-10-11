@@ -16,7 +16,7 @@ let plugins = [
     __DEBUG__: JSON.stringify(!production),
   }),
 ];
-console.log('asdfasfsdfsa ', process.env.API_KEY)
+
 if (production) {
   plugins = plugins.concat([
     new CleanPlugin(),
