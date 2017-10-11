@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import YTSearch from 'youtube-api-search';
 
 class SearchBar extends React.Component {
    constructor(props) {
@@ -24,8 +23,3 @@ class SearchBar extends React.Component {
 }
 
 export default SearchBar;
-
-    // YTSearch({key: `${API_KEY}`, term: 'surfboards'}, (videos) => {
-    //   this.setState({ videos });
-    // });
-//   }

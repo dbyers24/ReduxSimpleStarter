@@ -11,14 +11,12 @@ const production = process.env.NODE_ENV === 'production';
 let plugins = [
   new ExtractPlugin('bundle.[hash].css'),
   new HTMLPlugin({ template: `${__dirname}/src/index.html` }),
-  new EnvironmentPlugin(['NODE_ENV']),
+  new EnvironmentPlugin(['NODE_ENV', 'API_KEY']),
   new DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
-    __API_KEY__: JSON.stringify(process.env.API_KEY),
-
   }),
 ];
-
+console.log('asdfasfsdfsa ', process.env.API_KEY)
 if (production) {
   plugins = plugins.concat([
     new CleanPlugin(),
